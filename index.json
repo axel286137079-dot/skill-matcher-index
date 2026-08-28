@@ -1,7 +1,7 @@
 {
   "name": "skill-matcher 开源技能目录",
   "description": "由 skill-matcher 维护的全局开源技能索引，供所有安装者联网同步。",
-  "version": 1,
+  "version": 2,
   "updated_at": "2026-08-28",
   "skills": [
     {
