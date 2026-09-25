@@ -1,0 +1,246 @@
+{
+  "month": "2026-09",
+  "note": "留痕机制自 v4 启用。本月 15 条均为 v3 条目的追溯登记（详见本目录 README 的「追溯登记」一节）；之后的每次入库裁决必须在此目录新增记录，CI 以 --strict 校验留痕与 index.json 双向一致。",
+  "decisions": [
+    {
+      "id": "webapp-testing",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "brand-guidelines",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "canvas-design",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "mcp-builder",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "pdf",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "slack-gif-creator",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "artifacts-builder",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "image-editing",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "mcp-architect",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "video-editing",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "docx",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "pptx",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "xlsx",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：anthropics/skills"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 anthropics/skills。"
+    },
+    {
+      "id": "superpowers",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：obra/superpowers"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 obra/superpowers。"
+    },
+    {
+      "id": "agents-marketplace",
+      "date": "2026-09-26",
+      "decision": "approved",
+      "decided_by": "axel286137079-dot（维护者）",
+      "basis": [
+        "PR #1 将其纳入公开目录（2026-09-25T21:33Z 合并）",
+        "CI 机器预审通过（scripts/validate.py）",
+        "来源可公开验证：wshobson/agents"
+      ],
+      "evidence": [
+        "https://github.com/axel286137079-dot/skill-matcher-index/pull/1",
+        "https://github.com/axel286137079-dot/skill-matcher-index/blob/main/index.json"
+      ],
+      "note": "追溯登记：v4 启用留痕机制后补登。条目随 PR #1 一次性入库，当时未保留逐条裁决记录；本条只登记入库事实与依据，不代表当时存在逐条审核过程。来源 wshobson/agents。"
+    }
+  ]
+}

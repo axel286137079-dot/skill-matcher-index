@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/axel286137079-dot/skill-matcher-index/main/schema/skill.schema.json",
+  "title": "skill-matcher 目录条目 (skill entry)",
+  "description": "单条技能条目的格式契约。必填 4 字段（id/name/description/install）与 scripts/validate.py 的必填字段检查等价；其余字段为 v4 起引入的可选元数据。向前兼容契约：新字段只会是可选的，消费者必须忽略未知字段。",
+  "type": "object",
+  "required": ["id", "name", "description", "install"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,63}$",
+      "description": "全局唯一 id：小写字母/数字/连字符，首字符须为字母或数字，最长 64 字符。"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "展示名，通常与 id 相同。"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 8,
+      "description": "这个技能做什么/什么时候用；中英皆可。description 是词法检索的主力字段，越具体匹配越准。"
+    },
+    "install": {
+      "type": "string",
+      "minLength": 1,
+      "description": "安装方式（git clone ... 或 skillhub install ...）。"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["opensource", "community", "local", "marketplace", "manual"],
+      "description": "来源分类。公开目录 index.json 中的条目应为 opensource 或 community。"
+    },
+    "origin": {
+      "type": "string",
+      "minLength": 1,
+      "description": "出处，形如 作者/仓库名。用于溯源、死链检查与默认 homepage 推导。"
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://[^\\s]+$",
+      "description": "可选主页 URL，必须是 https（防降级劫持）。"
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "description": "受控词表标签，小写 ASCII 单词（词表 = 本字段 items.enum；中文说明见 schema/README.md）。匹配器的分词器对 ASCII 取整词、对中文取 bigram，故 ASCII 标签命中权重最高。",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$",
+        "enum": [
+          "agents",
+          "animation",
+          "architecture",
+          "branding",
+          "data",
+          "debugging",
+          "design",
+          "document",
+          "e2e",
+          "editing",
+          "ffmpeg",
+          "frontend",
+          "gif",
+          "image",
+          "integration",
+          "layout",
+          "marketplace",
+          "mcp",
+          "media",
+          "methodology",
+          "pdf",
+          "planning",
+          "playwright",
+          "presentation",
+          "prototype",
+          "slack",
+          "spreadsheet",
+          "styleguide",
+          "subagents",
+          "tdd",
+          "testing",
+          "video",
+          "webapp",
+          "workflow"
+        ]
+      }
+    },
+    "aliases": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "uniqueItems": true,
+      "description": "别名/近义词（中英皆可），用于提升召回。英文别名请用小写；同一条目内别名按大小写不敏感比较去重（本文件用 uniqueItems 做精确比较，大小写不敏感去重由 scripts/validate.py 强制）。",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64
+      }
+    },
+    "added_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "首次入库日期 YYYY-MM-DD。"
+    }
+  }
+}

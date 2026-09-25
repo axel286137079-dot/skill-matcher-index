@@ -1,0 +1,40 @@
+diff --git a/.github/workflows/validate.yml b/.github/workflows/validate.yml
+index 35c8d9f..1083b6d 100644
+--- a/.github/workflows/validate.yml
++++ b/.github/workflows/validate.yml
+@@ -5,16 +5,32 @@ on:
+   push:
+     branches: [main]
+ 
++permissions:
++  contents: read
++
+ jobs:
+   machine-precheck:
+     name: 机器预审 (machine pre-check)
+     runs-on: ubuntu-latest
+     steps:
+-      - uses: actions/checkout@v4
+-      - uses: actions/setup-python@v5
++      # actions 固定到 commit SHA：上游 tag 是可移动的，SHA 不是（供应链防投毒）
++      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
++      - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
+         with:
+           python-version: "3.12"
+-      - name: Validate index.json (格式/字段/查重/敏感词)
++      - name: Validate index.json (格式/字段/查重/敏感词/v4 元数据契约)
+         run: python3 scripts/validate.py index.json
+       - name: Validate contributions (格式/查重/共识统计)
+         run: python3 scripts/validate.py contributions
++      - name: Validate review-log (留痕格式 + 与 index.json 双向一致)
++        run: python3 scripts/validate.py index.json --check-review-log --strict
++      - name: Check dead links (origin/homepage 可达性；网络异常降级为告警)
++        run: python3 scripts/validate.py index.json --check-deadlinks
++        env:
++          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
++      - name: Install jsonschema (固定版本)
++        run: python3 -m pip install --quiet --disable-pip-version-check 'jsonschema==4.23.0'
++      - name: Schema check (JSON Schema + schema 自证 + 防漂移)
++        run: python3 scripts/check_schema.py --require
++      - name: Self-test (规则负样本：证明 CI 真的会拒绝坏数据)
++        run: python3 scripts/selftest.py

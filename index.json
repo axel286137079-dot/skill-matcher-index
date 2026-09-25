@@ -1,7 +1,7 @@
 {
   "name": "skill-matcher 开源技能目录",
   "description": "由 skill-matcher 维护的全局开源技能索引，供所有安装者联网同步。",
-  "version": 3,
+  "version": 4,
   "updated_at": "2026-09-26",
   "skills": [
     {
@@ -10,7 +10,11 @@
       "description": "Web 应用测试：用 Playwright 编写并执行端到端测试。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["testing", "e2e", "playwright", "webapp"],
+      "aliases": ["端到端测试", "网页测试", "e2e testing", "browser testing"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "brand-guidelines",
@@ -18,7 +22,11 @@
       "description": "品牌视觉规范设计与一致性检查（logo 使用、配色、字体）。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["design", "branding", "styleguide"],
+      "aliases": ["品牌规范", "品牌指南", "视觉识别", "brand guide", "visual identity"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "canvas-design",
@@ -26,7 +34,11 @@
       "description": "设计画布排版与设计规范。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["design", "layout"],
+      "aliases": ["画布设计", "排版设计", "海报设计", "layout design"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "mcp-builder",
@@ -34,7 +46,11 @@
       "description": "构建 MCP 服务器：从需求到可运行的服务端代码。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["mcp", "integration"],
+      "aliases": ["mcp 服务器", "构建 mcp", "mcp server"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "pdf",
@@ -42,7 +58,11 @@
       "description": "PDF 文档处理：读取、提取文本/表格、合并拆分、生成 PDF。Official Anthropic document skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["pdf", "document", "data"],
+      "aliases": ["pdf 处理", "pdf 提取", "pdf 表格", "pdf extraction", "pdf forms"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "slack-gif-creator",
@@ -50,7 +70,11 @@
       "description": "创建 Slack GIF：脚本生成动画并上传。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["gif", "animation", "slack"],
+      "aliases": ["slack 动图", "gif 制作", "animated gif"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "artifacts-builder",
@@ -58,7 +82,11 @@
       "description": "构建可运行的 Web 应用原型（HTML/CSS/JS），适合快速做交互 demo。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["webapp", "prototype", "frontend"],
+      "aliases": ["网页原型", "原型开发", "web 原型", "html prototype"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "image-editing",
@@ -66,7 +94,11 @@
       "description": "图像编辑与处理（裁剪、滤镜、合成），配合图像生成模型使用。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["image", "editing", "media"],
+      "aliases": ["图片编辑", "图像处理", "修图", "photo editing"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "mcp-architect",
@@ -74,7 +106,11 @@
       "description": "MCP 架构设计：规划服务器结构、工具清单与连接方案。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["mcp", "architecture", "planning"],
+      "aliases": ["mcp 架构", "mcp 规划", "mcp 设计", "mcp architecture"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "video-editing",
@@ -82,7 +118,11 @@
       "description": "视频编辑：剪辑、字幕、转场（ffmpeg）。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["video", "editing", "ffmpeg", "media"],
+      "aliases": ["视频剪辑", "视频编辑", "字幕", "video editing", "subtitle"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "docx",
@@ -90,7 +130,11 @@
       "description": "创建和编辑 Microsoft Word 文档（.docx）：从零生成、排版、批注。Official Anthropic document skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["document", "editing"],
+      "aliases": ["word 文档", "docx 文档", "文档生成", "word document"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "pptx",
@@ -98,7 +142,11 @@
       "description": "创建和编辑 PowerPoint 演示文稿（.pptx），支持模板与图表。Official Anthropic document skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["presentation", "document"],
+      "aliases": ["演示文稿", "幻灯片", "ppt", "powerpoint", "slides"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "xlsx",
@@ -106,7 +154,11 @@
       "description": "创建和编辑 Excel 表格（.xlsx）：数据、公式、图表、格式。Official Anthropic document skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "homepage": "https://github.com/anthropics/skills",
+      "tags": ["spreadsheet", "data"],
+      "aliases": ["excel", "表格处理", "电子表格", "excel 表格", "数据表"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "superpowers",
@@ -114,7 +166,11 @@
       "description": "Agentic 技能框架与工程方法论：头脑风暴、测试驱动开发、系统化调试、计划编写、代码评审、并行子代理等开发流程技能集合（社区高星项目）。",
       "install": "git clone https://github.com/obra/superpowers",
       "source": "opensource",
-      "origin": "obra/superpowers"
+      "origin": "obra/superpowers",
+      "homepage": "https://github.com/obra/superpowers",
+      "tags": ["workflow", "methodology", "tdd", "debugging", "agents"],
+      "aliases": ["技能框架", "开发方法论", "工程实践", "agent skills framework", "brainstorming"],
+      "added_at": "2026-09-26"
     },
     {
       "id": "agents-marketplace",
@@ -122,7 +178,11 @@
       "description": "多 harness 智能体插件市场：面向 Claude Code / Codex / Cursor / Copilot 等的专业子代理、技能与 MCP 配置集合（社区高星项目）。",
       "install": "git clone https://github.com/wshobson/agents",
       "source": "opensource",
-      "origin": "wshobson/agents"
+      "origin": "wshobson/agents",
+      "homepage": "https://github.com/wshobson/agents",
+      "tags": ["agents", "marketplace", "subagents", "mcp"],
+      "aliases": ["子代理市场", "插件市场", "agent 插件市场", "agent marketplace", "subagent marketplace"],
+      "added_at": "2026-09-26"
     }
   ]
 }
