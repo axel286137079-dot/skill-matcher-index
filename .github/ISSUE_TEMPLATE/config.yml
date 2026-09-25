@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 贡献指南（提交技能前请先阅读）
+    url: https://github.com/axel286137079-dot/skill-matcher-index/blob/main/CONTRIBUTING.md
+    about: 三条红线与提交方式说明
