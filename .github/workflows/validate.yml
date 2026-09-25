@@ -1,0 +1,20 @@
+name: Validate index
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  machine-precheck:
+    name: 机器预审 (machine pre-check)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate index.json (格式/字段/查重/敏感词)
+        run: python3 scripts/validate.py index.json
+      - name: Validate contributions (格式/查重/共识统计)
+        run: python3 scripts/validate.py contributions

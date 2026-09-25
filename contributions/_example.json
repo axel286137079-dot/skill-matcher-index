@@ -1,0 +1,9 @@
+[
+  {
+    "id": "example-skill",
+    "name": "example-skill",
+    "description": "示例条目：描述这个技能做什么（中英皆可，越具体匹配越准）。本文件仅作格式示例，不会被校验或入库。",
+    "install": "git clone https://github.com/example/example-skill",
+    "origin": "example/example-skill"
+  }
+]

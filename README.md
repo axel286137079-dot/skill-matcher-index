@@ -2,7 +2,7 @@
 
 > skill-matcher 的开源技能目录 · Community Skill Index —— 由社区共建，AI 审核员每晚自动审核合并。
 
-**当前收录：13 个技能**（`index.json`，所有安装者联网同步）
+**当前收录：15 个技能**（`index.json`，所有安装者联网同步）
 
 ## 这是什么
 
@@ -15,8 +15,8 @@
 
 ## 如何贡献（3 步）
 
-1. **拿到候选清单**：本地运行 `python3 bin/sync_index.py --collect-contributions`，生成 `index/contributions/candidates.json`。
-2. **提交贡献文件**：把你想公开的技能整理成 JSON 数组，在本仓库新建 `contributions/<你的GitHub用户名>.json`（格式见 [CONTRIBUTING.md](CONTRIBUTING.md)），提交 Pull Request；也可以直接开 Issue，按模板贴「技能名 / 描述 / 安装方式」。
+1. **拿到候选清单**：先 clone 主仓库 [skill-matcher](https://github.com/axel286137079-dot/skill-matcher)，在其根目录运行 `python3 bin/sync_index.py --collect-contributions`（脚本在主仓库，不在本仓库），生成 `index/contributions/candidates.json`。
+2. **提交贡献文件**：把你想公开的技能整理成 JSON 数组，在本仓库新建 `contributions/<你的GitHub用户名>.json`（格式见 [CONTRIBUTING.md](CONTRIBUTING.md) 和示例 [contributions/_example.json](contributions/_example.json)），提交 Pull Request——CI 会自动跑机器预审；也可以直接开 Issue，按模板贴「技能名 / 描述 / 安装方式」。
 3. **等审核**：AI 审核员每晚 23:00 自动审核（机器预审 → AI 安全+质量裁决 → 合并 → 发布 `index.json`）。
 
 三条红线：**不含密钥 · 不含危险指令 · 不伪造刷量**。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
@@ -24,6 +24,8 @@
 ## 审核与共识机制
 
 - 每条贡献经过：机器预审（敏感词/质量分/查重）→ AI 审核（安全+质量）→ 人工兜底抽查。
+- **机器预审已实现为本仓库 CI**：任何 PR 自动运行 [`scripts/validate.py`](scripts/validate.py)（JSON 合法性 / 必填字段 / id 格式与查重 / 密钥与危险指令扫描 / 共识统计），本地可预跑 `python3 scripts/validate.py contributions`。
+- **AI 审核（每晚 23:00）**：由维护者侧的 AI 审核助手执行并合并发布，实现位于维护者环境，未包含在本仓库；本仓库 CI 绿灯 = 机器预审通过。
 - 同一技能被 **≥3 个不同用户**独立提交 → 共识达成，自动采纳进 `index.json`。
 - 未达共识的条目进入 `pending`，会在 PR/Issue 中说明原因。
 
@@ -31,8 +33,16 @@
 
 ```
 index.json                  # 全局开源技能目录（所有安装者联网同步的目标文件）
-contributions/<user>.json   # 各贡献者的提交（待审核）
+contributions/<user>.json   # 各贡献者的提交（待审核，_ 开头为示例）
+scripts/validate.py         # 机器预审脚本（CI 与本地共用）
+.github/workflows/          # CI：PR 自动跑机器预审
+.github/ISSUE_TEMPLATE/     # Issue 模板：[技能提交]
+LICENSE                     # MIT
 ```
+
+## 许可证
+
+[MIT](LICENSE) —— 目录数据可自由使用、复用与再分发。
 
 ## 维护者
 

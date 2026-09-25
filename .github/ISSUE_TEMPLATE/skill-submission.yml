@@ -1,0 +1,40 @@
+name: 提交新技能
+description: 提交你确认可以公开的技能，审核通过后收录进开源技能目录
+title: "[技能提交] "
+labels: ["skill-submission"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 技能名（id）
+      description: 与 SKILL.md frontmatter 的 name 一致，建议小写字母 + 连字符
+      placeholder: my-skill
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 描述
+      description: 这个技能做什么（中英皆可，越具体匹配越准）
+    validations:
+      required: true
+  - type: input
+    id: install
+    attributes:
+      label: 安装方式
+      placeholder: git clone https://github.com/...
+    validations:
+      required: true
+  - type: input
+    id: origin
+    attributes:
+      label: 来源（作者/仓库）
+      placeholder: author/repo-name
+  - type: textarea
+    id: confirm
+    attributes:
+      label: 确认（必填）
+      description: "我确认：① 该技能可以公开共享；② 不含密钥 / 私有配置 / 未公开内容；③ 不伪造、不刷量"
+      render: markdown
+    validations:
+      required: true
