@@ -1,0 +1,2 @@
+# CI / 本地 schema 校验专用。scripts/validate.py 与 scripts/selftest.py 只依赖标准库。
+jsonschema==4.26.0

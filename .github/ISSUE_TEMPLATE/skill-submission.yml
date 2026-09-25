@@ -30,6 +30,18 @@ body:
     attributes:
       label: 来源（作者/仓库）
       placeholder: author/repo-name
+  - type: input
+    id: tags
+    attributes:
+      label: 标签（可选）
+      description: 小写 ASCII 词，逗号分隔，最多 8 个。JS 引擎按字符串数组打分。不要写中文，不要写对象。
+      placeholder: pdf, document
+  - type: input
+    id: homepage
+    attributes:
+      label: 主页（可选）
+      description: 必须是 https URL，且页面真实存在。别名 aliases 当前客户端不读取，请不要为了提高匹配去填。
+      placeholder: https://github.com/author/repo
   - type: textarea
     id: confirm
     attributes:

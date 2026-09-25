@@ -1,8 +1,8 @@
 {
   "name": "skill-matcher 开源技能目录",
   "description": "由 skill-matcher 维护的全局开源技能索引，供所有安装者联网同步。",
-  "version": 3,
-  "updated_at": "2026-09-26",
+  "version": 4,
+  "updated_at": "2026-09-25",
   "skills": [
     {
       "id": "webapp-testing",
@@ -10,7 +10,18 @@
       "description": "Web 应用测试：用 Playwright 编写并执行端到端测试。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "playwright",
+        "test",
+        "e2e",
+        "web"
+      ],
+      "aliases": [
+        "webapp testing",
+        "端到端测试"
+      ],
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing"
     },
     {
       "id": "brand-guidelines",
@@ -18,7 +29,17 @@
       "description": "品牌视觉规范设计与一致性检查（logo 使用、配色、字体）。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "brand",
+        "design",
+        "logo"
+      ],
+      "aliases": [
+        "品牌规范",
+        "brand guidelines"
+      ],
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines"
     },
     {
       "id": "canvas-design",
@@ -26,7 +47,17 @@
       "description": "设计画布排版与设计规范。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "design",
+        "canvas",
+        "layout"
+      ],
+      "aliases": [
+        "画布设计",
+        "canvas design"
+      ],
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/canvas-design"
     },
     {
       "id": "mcp-builder",
@@ -34,7 +65,17 @@
       "description": "构建 MCP 服务器：从需求到可运行的服务端代码。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "mcp",
+        "server",
+        "api"
+      ],
+      "aliases": [
+        "MCP 服务器",
+        "mcp builder"
+      ],
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder"
     },
     {
       "id": "pdf",
@@ -42,7 +83,16 @@
       "description": "PDF 文档处理：读取、提取文本/表格、合并拆分、生成 PDF。Official Anthropic document skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "pdf",
+        "document"
+      ],
+      "aliases": [
+        "PDF 处理",
+        "pdf"
+      ],
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/pdf"
     },
     {
       "id": "slack-gif-creator",
@@ -50,7 +100,17 @@
       "description": "创建 Slack GIF：脚本生成动画并上传。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "gif",
+        "slack",
+        "animation"
+      ],
+      "aliases": [
+        "Slack GIF",
+        "动图"
+      ],
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator"
     },
     {
       "id": "artifacts-builder",
@@ -58,7 +118,16 @@
       "description": "构建可运行的 Web 应用原型（HTML/CSS/JS），适合快速做交互 demo。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "html",
+        "prototype",
+        "web"
+      ],
+      "aliases": [
+        "artifacts builder",
+        "网页原型"
+      ]
     },
     {
       "id": "image-editing",
@@ -66,7 +135,15 @@
       "description": "图像编辑与处理（裁剪、滤镜、合成），配合图像生成模型使用。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "image",
+        "edit"
+      ],
+      "aliases": [
+        "图像编辑",
+        "image editing"
+      ]
     },
     {
       "id": "mcp-architect",
@@ -74,7 +151,15 @@
       "description": "MCP 架构设计：规划服务器结构、工具清单与连接方案。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "mcp",
+        "architecture"
+      ],
+      "aliases": [
+        "MCP 架构",
+        "mcp architect"
+      ]
     },
     {
       "id": "video-editing",
@@ -82,7 +167,16 @@
       "description": "视频编辑：剪辑、字幕、转场（ffmpeg）。Official Anthropic skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "video",
+        "ffmpeg",
+        "edit"
+      ],
+      "aliases": [
+        "视频编辑",
+        "video editing"
+      ]
     },
     {
       "id": "docx",
@@ -90,7 +184,17 @@
       "description": "创建和编辑 Microsoft Word 文档（.docx）：从零生成、排版、批注。Official Anthropic document skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "docx",
+        "document",
+        "word"
+      ],
+      "aliases": [
+        "Word 文档",
+        "word"
+      ],
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/docx"
     },
     {
       "id": "pptx",
@@ -98,7 +202,17 @@
       "description": "创建和编辑 PowerPoint 演示文稿（.pptx），支持模板与图表。Official Anthropic document skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "pptx",
+        "slides",
+        "powerpoint"
+      ],
+      "aliases": [
+        "幻灯片",
+        "powerpoint"
+      ],
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/pptx"
     },
     {
       "id": "xlsx",
@@ -106,7 +220,17 @@
       "description": "创建和编辑 Excel 表格（.xlsx）：数据、公式、图表、格式。Official Anthropic document skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
-      "origin": "anthropics/skills"
+      "origin": "anthropics/skills",
+      "tags": [
+        "xlsx",
+        "excel",
+        "spreadsheet"
+      ],
+      "aliases": [
+        "Excel 表格",
+        "excel"
+      ],
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/xlsx"
     },
     {
       "id": "superpowers",
@@ -114,7 +238,17 @@
       "description": "Agentic 技能框架与工程方法论：头脑风暴、测试驱动开发、系统化调试、计划编写、代码评审、并行子代理等开发流程技能集合（社区高星项目）。",
       "install": "git clone https://github.com/obra/superpowers",
       "source": "opensource",
-      "origin": "obra/superpowers"
+      "origin": "obra/superpowers",
+      "tags": [
+        "agent",
+        "tdd",
+        "debug"
+      ],
+      "aliases": [
+        "superpowers",
+        "测试驱动开发"
+      ],
+      "homepage": "https://github.com/obra/superpowers"
     },
     {
       "id": "agents-marketplace",
@@ -122,7 +256,17 @@
       "description": "多 harness 智能体插件市场：面向 Claude Code / Codex / Cursor / Copilot 等的专业子代理、技能与 MCP 配置集合（社区高星项目）。",
       "install": "git clone https://github.com/wshobson/agents",
       "source": "opensource",
-      "origin": "wshobson/agents"
+      "origin": "wshobson/agents",
+      "tags": [
+        "agent",
+        "marketplace",
+        "mcp"
+      ],
+      "aliases": [
+        "agents marketplace",
+        "插件市场"
+      ],
+      "homepage": "https://github.com/wshobson/agents"
     }
   ]
 }
