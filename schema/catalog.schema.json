@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/axel286137079-dot/skill-matcher-index/schema/catalog.schema.json",
+  "title": "skill-matcher open skill index",
+  "description": "Document contract for index.json. The version property is the catalog revision counter, not a schema id. Skill fields tags, aliases, and homepage are optional so a revision-3 document still validates. Patterns here are compared byte-for-byte with scripts/validate.py by scripts/check_schema.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "description", "version", "updated_at", "skills"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^(?=.*\\S)[\\s\\S]+$"
+    },
+    "description": {
+      "type": "string",
+      "pattern": "^(?=.*\\S)[\\s\\S]+$"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "updated_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "skills": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/skill" }
+    }
+  },
+  "$defs": {
+    "skill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "description", "install"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+        },
+        "name": {
+          "type": "string",
+          "pattern": "^[^\\r\\n]{1,128}$"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 8,
+          "maxLength": 2000
+        },
+        "install": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "source": {
+          "enum": ["opensource", "community"]
+        },
+        "origin": {
+          "type": "string",
+          "pattern": "^[^\\r\\n]{1,200}$"
+        },
+        "tags": {
+          "type": "array",
+          "maxItems": 8,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,31}$"
+          }
+        },
+        "aliases": {
+          "type": "array",
+          "maxItems": 8,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^(?=.*\\S)[^\\x00-\\x1F\\x7F]{1,64}$"
+          }
+        },
+        "homepage": {
+          "type": "string",
+          "maxLength": 2048,
+          "pattern": "^https://(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\\.)+[A-Za-z]{2,}(?::[0-9]{1,5})?(?:/[A-Za-z0-9._~:/?#@!$&'()*+,;=%-]*)?$"
+        }
+      }
+    },
+    "contributionFile": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/skill" }
+    },
+    "reviewRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ts", "id", "decision", "by", "reason"],
+      "properties": {
+        "ts": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+        },
+        "decision": {
+          "enum": ["approved", "rejected", "revoked", "pending"]
+        },
+        "by": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$"
+        },
+        "reason": {
+          "type": "string",
+          "pattern": "^(?=.*\\S)[^\\x00-\\x1F\\x7F]{8,500}$"
+        },
+        "catalog_version": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    }
+  }
+}
