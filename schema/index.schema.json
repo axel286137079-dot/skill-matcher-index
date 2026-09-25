@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/axel286137079-dot/skill-matcher-index/main/schema/index.schema.json",
+  "title": "skill-matcher 全局技能目录 (index.json)",
+  "description": "index.json 的格式契约。所有安装者联网同步这个文件，因此它同时是「客户端兼容性契约」：字段只增不减，新增字段必须可选，消费者必须忽略未知字段。",
+  "type": "object",
+  "required": ["name", "description", "version", "updated_at", "skills"],
+  "additionalProperties": true,
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "目录名称。"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "目录说明（会展示给用户）。"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "目录数据版本，单调递增。发布时打 tag v<version>，客户端可据此判断「新版本」而非「被篡改」。"
+    },
+    "updated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "数据最后更新日期 YYYY-MM-DD。"
+    },
+    "skills": {
+      "type": "array",
+      "minItems": 1,
+      "description": "技能条目数组。条目格式见 skill.schema.json。id 必须全局唯一（JSON Schema 无法表达跨条目唯一性，由 scripts/validate.py 强制）。",
+      "items": {
+        "$ref": "skill.schema.json"
+      }
+    }
+  },
+  "if": {
+    "required": ["version"],
+    "properties": {
+      "version": {
+        "minimum": 4
+      }
+    }
+  },
+  "then": {
+    "description": "v4 契约：version >= 4 时，每条目必须带有 tags / aliases / added_at。",
+    "properties": {
+      "skills": {
+        "type": "array",
+        "items": {
+          "required": ["tags", "aliases", "added_at"]
+        }
+      }
+    }
+  }
+}
