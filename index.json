@@ -1,8 +1,9 @@
 {
   "name": "skill-matcher 开源技能目录",
   "description": "由 skill-matcher 维护的全局开源技能索引，供所有安装者联网同步。",
-  "version": 3,
-  "updated_at": "2026-09-26",
+  "version": 4,
+  "content_sha256": "775f36c73b5b6bf6ce19bbc1a976daf8d547bd8abb0f0c62230da66341594df4",
+  "updated_at": "2026-09-27",
   "skills": [
     {
       "id": "webapp-testing",
@@ -85,11 +86,23 @@
       "origin": "anthropics/skills"
     },
     {
+      "id": "agents-marketplace",
+      "name": "agents-marketplace",
+      "description": "多 harness 智能体插件市场：面向 Claude Code / Codex / Cursor / Copilot 等的专业子代理、技能与 MCP 配置集合（社区高星项目）。",
+      "install": "git clone https://github.com/wshobson/agents",
+      "source": "opensource",
+      "kind": "skill",
+      "tags": [],
+      "origin": "wshobson/agents"
+    },
+    {
       "id": "docx",
       "name": "docx",
       "description": "创建和编辑 Microsoft Word 文档（.docx）：从零生成、排版、批注。Official Anthropic document skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
+      "kind": "skill",
+      "tags": [],
       "origin": "anthropics/skills"
     },
     {
@@ -98,6 +111,8 @@
       "description": "创建和编辑 PowerPoint 演示文稿（.pptx），支持模板与图表。Official Anthropic document skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
+      "kind": "skill",
+      "tags": [],
       "origin": "anthropics/skills"
     },
     {
@@ -106,6 +121,8 @@
       "description": "创建和编辑 Excel 表格（.xlsx）：数据、公式、图表、格式。Official Anthropic document skill.",
       "install": "git clone https://github.com/anthropics/skills",
       "source": "opensource",
+      "kind": "skill",
+      "tags": [],
       "origin": "anthropics/skills"
     },
     {
@@ -114,15 +131,9 @@
       "description": "Agentic 技能框架与工程方法论：头脑风暴、测试驱动开发、系统化调试、计划编写、代码评审、并行子代理等开发流程技能集合（社区高星项目）。",
       "install": "git clone https://github.com/obra/superpowers",
       "source": "opensource",
+      "kind": "skill",
+      "tags": [],
       "origin": "obra/superpowers"
-    },
-    {
-      "id": "agents-marketplace",
-      "name": "agents-marketplace",
-      "description": "多 harness 智能体插件市场：面向 Claude Code / Codex / Cursor / Copilot 等的专业子代理、技能与 MCP 配置集合（社区高星项目）。",
-      "install": "git clone https://github.com/wshobson/agents",
-      "source": "opensource",
-      "origin": "wshobson/agents"
     }
   ]
 }
