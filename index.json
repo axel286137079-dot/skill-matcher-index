@@ -3,7 +3,7 @@
   "description": "由 skill-matcher 维护的全局开源技能索引，供所有安装者联网同步。",
   "version": 4,
   "content_sha256": "775f36c73b5b6bf6ce19bbc1a976daf8d547bd8abb0f0c62230da66341594df4",
-  "updated_at": "2026-09-27",
+  "updated_at": "2026-09-28",
   "skills": [
     {
       "id": "webapp-testing",
